@@ -1,14 +1,17 @@
-describe("BankAccount", function () {
-  it("displays the balance and account name", function() {
-    var testBankAccount = new BankAccount("David", 1000);
-    expect(testBankAccount.accountName).to.equal("David");
-    expect(testBankAccount.balance).to.equal(1000);
-
-
+describe("BankAccount", function() {
+  describe("deposit", function() {
+    it("adds the amount to the balance", function() {
+      var testBankAccount = Object.create(BankAccount);
+      testBankAccount.deposit(10);
+      expect(testBankAccount.balance).to.equal(10);
+    });
   });
 
-  // it("adds to the balance using deposit", function() {
-  //   var testBankAccount = new BankAccount(1000);
-  //   expect(testBankAccount.deposit(1000)).to.equal(2000);
-  // });
+  describe("withdraw", function() {
+    it("subtracts the amount from the balance", function() {
+      var testBankAccount = Object.create(BankAccount);
+      testBankAccount.withdraw(10);
+      expect(testBankAccount.balance).to.equal(-10);
+    });
+  });
 });

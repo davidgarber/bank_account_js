@@ -1,66 +1,59 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Bank</title>
+    <title>Bank Bling</title>
   </head>
   <body>
-    <div class="jumbotron">
+      <div class="container">
+          <div class="jumbotron">
 
-<h1>Bank Make it Rain</h1>
+      <h1>Bank Bling</h1>
 
-  <p class="one">
-  </p></div>
-
-
-
-  <p class ="one" style="
-  margin-bottom: 0px
-  ">
-  </div>
-
-  </div>
-    <div class="container">
-
-      <div class="row">
-        <div class="col-sm-6 col-sm-offset-4">
-          <h2>Add a contact:</h2>
-          <form id="new-contact">
-            <div class="form-group">
-              <label for="full-name">Name</label>
-              <input type="text" class="form-control" id="full-name">
-            </div>
-            <div class="form-group">
-              <label for="initial-deposit">Initial Deposit</label>
-              <input type="text" class="form-control" id="initial-deposit">
-            </div>
-            <button type="submit" class="btn">Add Account</button>
-          </form>
-
+        <p class="one">
+        </p></div>
+          <hr/>
           <div class="row">
-            <div class="col-md-6">
-              <h2>Manage Account</h2>
-              <form id="new-contact">
-                <div class="form-group">
-                  <label for="withdraw">Withdraw</label>
-                  <input type="text" class="form-control" id="withdraw">
-                </div>
-                <div class="form-group">
-                  <label for="deposit">Deposit</label>
-                  <input type="text" class="form-control" id="initial-deposit">
-                </div>
-                <button type="submit" class="btn">Add</button>
-              </form>
-
-          <h2>Balance:</h2>
-          <ul id="balance">
-
-          </ul>
-        </div>
+              <div class="col-md-6">
+                  <form id="create">
+                    <div class="form-group">
+                      <label for="name">Name of New Account</label>
+                      <input id="name" type="text" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="initial">Initial Deposit</label>
+                      <input id="initial" type="number" required>
+                    </div>
+                    <button type="submit" class="btn btn-info">Submit</button>
+                  </form>
+              </div>
+              <div class="col-md-6">
+                <form id="manage">
+                  <div class="form-group">
+                    <label for="deposit">Deposit</label>
+                    <input id="deposit" type="number" required>
+                  </div>
+                  <button type="submit" class="btn btn-info">Submit</button>
+                </form>
+                <form id="withdraw">
+                  <div class="form-group">
+                    <label for="withdraw">Withdraw</label>
+                    <input id="withdraw" type="number" required>
+                  </div>
+                  <button type="submit" class="btn btn-info">Submit</button>
+                </form>
+            </div>
+          </div>
+          <hr/>
+          <div class="account">
+            <div class="row">
+              <h3>Your Account Balance is:</h2>
+              <h1 class="balance"></h1>
+            </div>
+          </div>
       </div>
-    </div>
   </body>
 </html>
